@@ -1,3 +1,5 @@
+package unidad1;
+
 import java.util.Scanner;
 
 public class UserMain {
