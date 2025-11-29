@@ -13,12 +13,13 @@ public class VectorCadenas {
 
     // Método para leer cadenas desde el teclado
     public static void leerCadenas(String[] vector) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner nom = new Scanner(System.in); // Asegúrate de importar java.util.Scanner
         System.out.println("Ingrese 5 cadenas de texto:");
         for (int i = 0; i < vector.length; i++) {
             System.out.print("Cadena " + (i + 1) + ": ");
-            vector[i] = scanner.nextLine();
+            vector[i] = nom.nextLine();
         }
+     nom.close();   // No cerramos el Scanner para evitar conflictos con System.in
     }
 
     // Método para invertir el vector
@@ -37,5 +38,4 @@ public class VectorCadenas {
             System.out.println(cadena);
         }
     }
-    scanner.close();
-} 
+}

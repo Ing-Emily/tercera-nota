@@ -10,10 +10,10 @@ class Rectangulo {
 
 public class Ejercicio2 {
 
-    public static void modificarRectangulo(Rectangulo r) {
-        r.ancho = 50;
-        r.alto = 30;
-        System.out.println("Dentro del método: ancho = " + r.ancho + ", alto = " + r.alto);
+    public static void modificarRectangulo(Rectangulo rectangulo) {
+        rectangulo.ancho = 50;
+        rectangulo.alto = 30;
+        System.out.println("Dentro del método: ancho = " + rectangulo.ancho + ", alto = " + rectangulo.alto);
     }
 
     public static void main(String[] args) {
